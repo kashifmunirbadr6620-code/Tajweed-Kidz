@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+.font-arabic {
+  font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', serif;
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif;
+}
+
+/* Custom playful child-friendly animations */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes bounce-fun {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px) scale(1.03); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.3; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-float {
+  animation: float-slow 3s ease-in-out infinite;
+}
+
+.animate-bounce-fun {
+  animation: bounce-fun 1.8s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.8s ease-in-out infinite;
+}
+
+/* Custom scrollbar for mobile feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}

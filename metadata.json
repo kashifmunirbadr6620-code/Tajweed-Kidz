@@ -1,0 +1,6 @@
+{
+  "name": "Tajweed Kids - بچوں کے لیے تجوید",
+  "description": "Fun, colorful, and interactive mobile app for kids (ages 5-12) to master Makharij and Tajweed rules with playful games, audio examples, and cartoon Qari guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" />
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="none" stroke="#34d399" stroke-width="8" opacity="0.4" />
+
+  <!-- Dome Silhouette in background -->
+  <path d="M 256 90 C 210 160 170 200 170 240 L 342 240 C 342 200 302 160 256 90 Z" fill="#065f46" opacity="0.6" />
+
+  <!-- Open Quran Book -->
+  <g transform="translate(0, 30)">
+    <!-- Book Backing Shadow -->
+    <path d="M 100 330 C 180 320 240 335 256 350 C 272 335 332 320 412 330 L 412 210 C 332 200 272 215 256 230 C 240 215 180 200 100 210 Z" fill="#d97706" />
+
+    <!-- Left Page -->
+    <path d="M 110 320 C 180 310 235 325 252 340 L 252 220 C 235 205 180 190 110 200 Z" fill="#fffbeb" stroke="#fef3c7" stroke-width="4" />
+    <!-- Left Page Lines -->
+    <line x1="140" y1="230" x2="225" y2="230" stroke="#10b981" stroke-width="6" stroke-linecap="round" />
+    <line x1="140" y1="255" x2="220" y2="255" stroke="#059669" stroke-width="6" stroke-linecap="round" />
+    <line x1="150" y1="280" x2="210" y2="280" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Right Page -->
+    <path d="M 402 320 C 332 310 277 325 260 340 L 260 220 C 277 205 332 190 402 200 Z" fill="#fffdf5" stroke="#fef3c7" stroke-width="4" />
+    <!-- Right Page Lines -->
+    <line x1="287" y1="230" x2="372" y2="230" stroke="#10b981" stroke-width="6" stroke-linecap="round" />
+    <line x1="292" y1="255" x2="372" y2="255" stroke="#059669" stroke-width="6" stroke-linecap="round" />
+    <line x1="302" y1="280" x2="362" y2="280" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Center Spine Bookmark Ribbon -->
+    <path d="M 256 230 L 256 370 L 246 360 L 236 370 L 236 230 Z" fill="#ef4444" />
+  </g>
+
+  <!-- Big Shining Golden Star on Top -->
+  <g transform="translate(256, 130) scale(1.3)">
+    <polygon points="0,-35 10,-10 35,-10 15,6 22,30 0,16 -22,30 -15,6 -35,-10 -10,-10" fill="url(#goldGrad)" stroke="#b45309" stroke-width="2" />
+    <circle cx="0" cy="0" r="8" fill="#ffffff" opacity="0.6" />
+  </g>
+
+  <!-- Cute sparkles -->
+  <circle cx="110" cy="130" r="10" fill="#fef08a" />
+  <circle cx="400" cy="140" r="12" fill="#fef08a" />
+  <circle cx="390" cy="380" r="8" fill="#6ee7b7" />
+  <circle cx="120" cy="390" r="8" fill="#6ee7b7" />
+</svg>
